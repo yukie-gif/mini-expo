@@ -67,6 +67,10 @@ section.block{padding:clamp(40px,6vw,72px) var(--pad);position:relative}
 .dcell .sub{font-size:20px;color:rgba(244,241,234,0.7);margin-top:9px}
 .dcell a.maplink{color:var(--cyan);font-size:13px;display:inline-flex;align-items:center;gap:5px;margin-top:10px}
 .dcell a.maplink:hover{text-decoration:underline}
+.dcell a.venue-link{display:block;color:inherit;text-decoration:none}
+.dcell a.venue-link .val .ext{color:var(--cyan);font-size:0.7em;transition:color .2s}
+.dcell a.venue-link:hover .val{color:var(--cyan)}
+.dcell a.venue-link:hover .sub{text-decoration:underline}
 
 .arena-wrap{margin-top:28px;border-radius:22px;overflow:hidden;border:1px solid var(--line);position:relative}
 .arena-wrap img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:cover}
@@ -158,7 +162,7 @@ footer{padding:48px var(--pad) 64px;border-top:1px solid var(--line)}
     <div class="detail-grid">
       <div class="dcell"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="17" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18M8 2v4M16 2v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><div class="lab en">Date</div><div class="val" data-ja="7月9日（水）" data-en="Wed, July 9">7月9日（水）</div></div>
       <div class="dcell"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="lab en">Time</div><div class="val">16:50 – 18:00</div></div>
-      <div class="dcell"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg></div><div class="lab en">Venue</div><div class="val">CIVIC X-Verse Arena</div><div class="sub" data-ja="立命館大学 BKC" data-en="Ritsumeikan Univ. BKC">立命館大学 BKC</div></div>
+      <div class="dcell"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg></div><div class="lab en">Venue</div><a class="venue-link" href="https://r-jpeaks.ritsumei.ac.jp/facility/" target="_blank" rel="noopener"><div class="val">CIVIC X-Verse Arena <span class="ext">↗</span></div><div class="sub" data-ja="立命館大学BKC内" data-en="Inside Ritsumeikan Univ. BKC">立命館大学BKC内</div></a></div>
     </div>
   </div>
 </header>
